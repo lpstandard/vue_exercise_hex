@@ -157,20 +157,15 @@
               methods: {
                 reversetText: function() {
                   console.log("Click on Me", this.text);
-                  this.newText = this.text;
+                  this.newText = this.text
+                    .split("")
+                    .reverse("")
+                    .join("");
                 }
               }
             });
           </script>
 
-          <!-- 解答：
-methods: {
-  reverseText() {
-    console.log(this.text);
-    this.newText = this.text.split('').reverse().join('');
-  }
-}
--->
         </div>
       </div>
     </div>
